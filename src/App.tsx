@@ -9,6 +9,7 @@ const App: React.FC = () => {
   const rows = useOrganizationTable();
   const { fetchOrganizations } = useStore(({ fetchOrganizations }) => ({ fetchOrganizations }));
 
+  // TODO: this is a test
   useEffect(() => {
     ApiHandler.init();
     fetchOrganizations();
